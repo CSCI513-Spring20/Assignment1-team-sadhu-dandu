@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 public class BattleshipSearch implements SearchMethods {
 
     public void readFile(String pathURL) throws IOException {
-        BattleshipSearch battleshipSearch=new BattleshipSearch();
+        BattleshipSearch battleshipSearch=new BattleshipSearch();//Added new Object
         File file = new File(pathURL);
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st;
