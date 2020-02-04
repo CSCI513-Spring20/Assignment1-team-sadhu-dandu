@@ -1,5 +1,4 @@
 package Source;
-
 import java.io.*;
 import java.util.StringTokenizer;
 import java.util.Random;
@@ -9,13 +8,16 @@ public class BattleshipSearch  {
     SearchMethods randomSearch=new RandomSearch();        //object for RandomSearch
     SearchMethods strategicSearch=new StrategySearch();   //object for StrategySearch
     public void readFile(String pathURL) throws IOException {
+
+        BattleshipSearch battleshipSearch=new BattleshipSearch();//Added new Object
+
         File file = new File(pathURL);
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st;
         int gameNum=1;
         while ((st = br.readLine()) != null){
             System.out.println(st);
-            Grid grid=new Grid();
+            Grid grid=new Grid();//object for the  class Grid
             String [][] maingrid=grid.returnGrid(); //copying the return grid to main grid
             int i=0;
             StringTokenizer tokenizer = new StringTokenizer(st, ")");
@@ -52,3 +54,4 @@ public class BattleshipSearch  {
     }
 
 }
+
