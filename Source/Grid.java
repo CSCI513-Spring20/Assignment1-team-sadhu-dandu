@@ -4,7 +4,7 @@ package Source;
 
 public class Grid {
 	
-	// private variable grid
+	// private array grid
 	
 	private String[][] grid=new String[25][25];
 	public String[][] returnGrid(){
