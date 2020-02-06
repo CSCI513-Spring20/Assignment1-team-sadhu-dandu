@@ -7,8 +7,8 @@ public class RandomSearch implements SearchMethods{
         String coordinates="";
         while(cnt<8){
 
-            int i= (int)(Math.random()*25);
-            int j=(int)(Math.random()*25);
+            int i= (int)(Math.random()*25); //generating x coordinate Randomly
+            int j=(int)(Math.random()*25); // generating y coordinate randomly
 
             if(name[i][j]=="C" || name[i][j]=="B"){
                 cnt++;
