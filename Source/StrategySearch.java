@@ -10,13 +10,7 @@ public class StrategySearch implements SearchMethods {
         int cnt=0;
         int cells=0;
         String coordinates="";
-        /*ArrayList<String> list = new ArrayList<String>();
-        for(int i=0;i<25;i++) {
-            for (int j = 0; j < 25; j++) {
-
-                list.add(name[i][j]);
-                */
-
+        
 
 
          for(int p=0;p<name.length;p++) {
