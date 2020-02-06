@@ -35,16 +35,16 @@ public class BattleshipSearch  {
             	//if tokenizer has more tokens go to next token and split it with ,.
             	
                 String t = tokenizer.nextToken();
-                String parts[] = t.split(",");
+                String parts[] = t.split(","); // splitting string using regex
                 String party1 = parts[0];
                 String part1 = party1.substring(1);
                 String party2 = parts[1];
                 String part2 = party2.substring(0);
                 if(i<5) {
-                    maingrid[Integer.parseInt(part1)][Integer.parseInt(part2)]="C";
+                    maingrid[Integer.parseInt(part1)][Integer.parseInt(part2)]="C"; //placing carrier on the grid
                 }
                 else {
-                    maingrid[Integer.parseInt(part1)][Integer.parseInt(part2)]="B";
+                    maingrid[Integer.parseInt(part1)][Integer.parseInt(part2)]="B"; // placing submarine on the grid
                 }
                 i++;
 
