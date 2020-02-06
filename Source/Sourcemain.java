@@ -10,7 +10,7 @@ public class Sourcemain {
     	// Battleship search class with the object
     	
         BattleshipSearch battleshipSearch=new BattleshipSearch();
-        battleshipSearch.readFile("C:\\Users\\pavan\\Desktop\\coord.txt");
+        battleshipSearch.readFile("Assignment1/input.txt");
     }
 
 }
